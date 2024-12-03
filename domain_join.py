@@ -71,7 +71,6 @@ def main():
 
     install_packages()
     configure_kerberos(domain)
-    set_hostname(domain)
     join_domain(domain, domain_admin_account, domain_admin_password)
     configure_sudoers()
     update_sssd_conf(domain)
